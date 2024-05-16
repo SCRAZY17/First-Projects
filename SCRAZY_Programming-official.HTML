@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRAZY_Programming</title>
+
+    <meta name="description"
+        content="We create websites, virtual menus, personalized phone apps, and more for your shop center.">
+    <meta name="author" content="Zakaria SCRAZY">
+    <meta name="keywords"
+        content="SCRAZY, websites, apps, virtual, hello world, programming, programs, HTML, CSS, Java, JavaScript">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="black">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="scrazyofficial.mywebcommunity.org">
+    <meta property="og:image" content="images/logo_trial">
+
+    <style>
+        /* Reset de estilos */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #bbbbbb;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .tooth {
+            background-color: #a7a7a7;
+            color: #000000;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            border: 0cm solid black;
+            border-radius: 25px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tooth:hover {
+            background-color: aqua;
+            transition-duration: 0.7s;
+            /* Establece una duración y un tipo de animación */
+            /* animation: rotation 2s infinite linear; */
+        }
+
+        @keyframes rotation {
+
+            /* Define la rotación de 0 a 360 grados */
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+
+        }
+
+        .tooth1:hover {
+            color: #00025e;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+            line-height: 1.6;
+            padding-top: 2cm;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-position: center;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            /* Ajustar la altura según el tamaño de tu logotipo */
+        }
+
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        nav {
+            float: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        nav a {
+            color: #000000;
+            padding: 10px 20px;
+            transition: color 0.7s;
+            font-size: 1.2em;
+        }
+
+
+        /* Contenido principal */
+        .main-content {
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #000000;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding-left: 2cm;
+        }
+
+        h2 {
+            color: #000000;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            padding-left: 1cm;
+        }
+
+        p {
+            color: #000000;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 1.1em;
+            line-height: 1.8;
+            padding-left: 1cm;
+        }
+
+        .special {
+            background-color: #a7a7a7;
+            border: 0px solid black;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 5px;
+            margin-bottom: 15px;
+        }
+
+        .special:hover {
+            background: linear-gradient(to left, white, rgb(0, 250, 237), rgb(0, 255, 0), rgb(183, 255, 249), white);
+            color: transparent;
+            animation: animated 5s linear infinite;
+        }
+
+        @keyframes animated {
+            to {
+                background-position-x: 2300px;
+            }
+        }
+
+        /* Formulario de contacto */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: linear-gradient(to left, rgb(25, 0, 255), rgb(0, 255, 0), rgb(0, 217, 255), rgb(17, 0, 255));
+            color: transparent;
+            animation: animated 5s linear infinite;
+            padding: 20px;
+            border-radius: 50px;
+        }
+
+        .contact-form fieldset {
+            border: none;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: transparent;
+            font-size: 1.1em;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 0px solid #ffffff;
+            border-radius: 50px;
+            background-color: #ffffff;
+            color: #000000;
+            /* sirve para cambiar el color del dd/mm/yy */
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="date"] :hover {
+            color: #00ff00;
+            transition-duration: 1.5s;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #6e6e6e;
+            border: 0;
+            width: 100%;
+            padding: 10px;
+            border-radius: 50px;
+            color: #000000;
+            cursor: pointer;
+            transition: background-color 0.8s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #00ff00;
+            transition-duration: 0.5s;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #575757;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #00ff00;
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .contact-form {
+                max-width: 100%;
+            }
+
+            header {
+                padding: 10px 0;
+                height: 150px;
+                /* Ajustar la altura para dispositivos móviles */
+            }
+
+            nav {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li:first-child {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><button class="tooth"><a class="Etapas" href="#1"><strong class="tooth1">About
+                                Us</strong></a></button></li>
+                <li><button class="tooth"><a class="Etapas" href="#2"><strong class="tooth1">Our
+                                Services</strong></a></button></li>
+                <li><button class="tooth"><a class="Etapas" href="#3"><strong class="tooth1">Contact
+                                Us</strong></a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <article>
+                <h1 id="1">Who are we?</h1>
+                <legend class="special">
+                    <p class="principio">If you are interested in extending your business to the web world, this is the
+                        right
+                        place.
+                        Here you can get your own website at a good price, and if you're not satisfied,
+                        you can cancel your request anytime and get your money back.</p>
+                </legend>
+
+            </article>
+
+            <article>
+                <h1 id="2">What do we do?</h1>
+                <p>Here we present all our services:</p>
+                <legend class="special">
+                    <ul type="1">
+                        <li>
+                            <h2>Personalized Websites</h2>
+                            <p>The process is easy. By texting us on WhatsApp using the link below, we will be able to
+                                access
+                                a video call to discuss the subject of the website and the payment terms.</p>
+                        </li>
+                        <li>
+                            <h2>Virtual Menus</h2>
+                            <p><strong>Virtual menus</strong> are simply normal menus as the ones represented to the
+                                customers
+                                at every restaurant.
+                                The difference is that you can access those menus by scanning a QR code, promoting a
+                                faster
+                                and
+                                easier order for the customers.
+                                These types of presentations can be very intuitive so the customers feel like having a
+                                better
+                                experience.</p>
+                        </li>
+                        <li>
+                            <h2>Personal HTML Courses</h2>
+                            <p>If you want to become a website creator, the first step is to learn how to use the HTML
+                                programming language.
+                                We can provide you with the necessary skills to understand this world by offering
+                                personal
+                                courses using video calls,
+                                and the price is only 5 euros a week. For more information, feel free to contact us
+                                anytime.
+                            </p>
+                        </li>
+                    </ul>
+
+                </legend>
+            </article>
+        </main>
+
+        <article class="footer">
+            <footer>
+                <section class="contact-form">
+
+                    <form method="post" action="http://tinyurl.com/2zxns6x2">
+                        <!-- Update action attribute with the correct form submission URL -->
+                        <fieldset>
+                            <legend>
+                                <h2 id="3">Contact Form</h2>
+                            </legend>
+
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="Croissant" required>
+
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" placeholder="Dark" required>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="darkcroissant@hotmail.com" required>
+
+                            <label for="age">Day of Birth:</label>
+                            <input type="date" name="age" required>
+
+                        </fieldset>
+                        <input class="send" type="submit" value="Send" onclick="redirectToInstagram()">
+                    </form>
+                </section>
+                <small>This website is in a prototype phase. In order to improve your experience, please feel safe
+                    to:</small>
+                <a class="Contacto" href="mailto:zakariadjellal17@gmail.com">send me a message on E-mail</a>
+                <small>or</small>
+                <a id="Contacto" class="Contacto" href="tel:+213-542432607">contact me on WhatsApp</a>
+            </footer>
+        </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            var scrollPosition = window.scrollY;
+            var animation = anime({
+                targets: header,
+                opacity: 0.2,
+                translateY: scrollPosition * 0.7,
+                easing: 'easeInOutQuad', // Puedes cambiar la función de interpolación según tus necesidades
+                duration: 1000 // Duración de la animación en milisegundos
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        // Desplazamiento suave al hacer clic en los enlaces del encabezado
+        var headerLinks = document.querySelectorAll('nav a');
+        headerLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                var targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Animaciones de texto
+        window.addEventListener('load', function () {
+            var textElements = document.querySelectorAll('h1, h2, p');
+            textElements.forEach(function (element) {
+                anime({
+                    targets: element,
+                    translateY: [100, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 1500,
+                    delay: anime.stagger(200)
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device_width, initial-scale=1.0"/>
+    <title>my xml doc</title>
+</head>
+<body>
+    <!--<summary>,
+     <remarks>(is the opposite of the summary),
+      <value>(describe a property "the same as js"),
+     <exception>(exeption for a property or a methode),
+      <param>(parameters of the methode"don't know what's a methode yet)-->
+</body>
+</html>
+///<remarks>
+
+</remarks>
